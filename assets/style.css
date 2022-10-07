@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    text-decoration: none;
+    background-color: #f0f2f5;
+
+}
+
+.top{
+    display: flex;
+}
+
+.logo {
+    width: 330px;
+    height: 100%;
+    padding: 13% 15% ;
+}
+
+.logo p{
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 32px;
+    width: 500px;
+    margin-left: 11%;
+    margin-top: -4%;
+}
+
+.register {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.3);
+    width: 396px;
+    height: 375px;
+    margin-top: 10%;
+    margin-left:5%;
+
+}
+.register input{
+    display: flex;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-top: 5%;
+    padding: 15px;
+    width: 85%;
+    margin-left: 3.5%;
+    border: 1px solid #dddfe2;
+}
+
+.register button:nth-child(3){
+    margin-top: 5%;
+    padding: 15px;
+    background-color: #1877f2;
+    font-size: 20px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 92%;
+    margin-left: 4%;
+
+}
+.register a{
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+}
+
+.register div{
+    border-top: 1px solid #dddfe2 ;
+    width: 90%;
+margin-left: 5%;
+margin-top: 5%;
+}
+.register button:nth-child(6){
+    display: flex;
+    width: 70%;
+    background-color: #42b72a;
+    padding: 15px;
+    justify-content: center;
+    margin-top: 5%;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    margin-left: 15% ;
+    font-size: 20px;
+
+}
+
+.create_page_text {
+    display: flex;
+    justify-content: end;
+    margin-right:18% ;
+    margin-top: -3%;
+    
+}
+.create_page_text pre{
+    font-size: 14px;
+}
+
+.create_page_text a{
+    font-weight: bold;
+    color: black;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 350px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal_content{
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+@keyframes animation {
+    from{top: -200px; opacity: 0;}
+    to {top:0;opacity:1;}
+    
+}
+
+.close{
+    color: white;
+    float: right;
+    transform: translate(20px);
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,.close:focus{
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal_header{
+    padding: 3px 21px;
+    background-color: teal;
+    color: white;
+}
+.modal_header h2, i{
+    color: black;
+}
+.modal_body{padding: 24px 16px;}
+.modal_footer{
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+
+
+
+
+
